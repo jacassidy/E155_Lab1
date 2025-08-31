@@ -1,0 +1,265 @@
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 15:00:01 on Aug 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(18): (vopt-2912) Port 'clk' not found in module 'seven_segment_display' (1st connection).
+# ** Error (suppressible): C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(18): (vopt-2912) Port 'reset' not found in module 'seven_segment_display' (2nd connection).
+# ** Error (suppressible): C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(18): (vopt-2912) Port 's' not found in module 'seven_segment_display' (3rd connection).
+# ** Error (suppressible): C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(18): (vopt-2912) Port 'led' not found in module 'seven_segment_display' (4th connection).
+# ** Error (suppressible): C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(18): (vopt-2912) Port 'seg' not found in module 'seven_segment_display' (5th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=0.
+# Error loading design
+# End time: 15:00:02 on Aug 31,2025, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 1
+# Compile of seven_segment_display.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 15:01:03 on Aug 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.testbench(fast)
+run 100
+vsim -gui work.testbench -voptargs=+acc
+# End time: 15:02:11 on Aug 31,2025, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 2
+# vsim -gui work.testbench -voptargs="+acc" 
+# Start time: 15:02:12 on Aug 31,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.seven_segment_display(fast)
+add wave -position insertpoint  \
+sim:/testbench/s
+add wave -position insertpoint  \
+sim:/testbench/s
+add wave -position insertpoint  \
+sim:/testbench/expected_seg
+add wave -position insertpoint  \
+sim:/testbench/result
+add wave -position insertpoint  \
+sim:/testbench/clk
+add wave -position insertpoint  \
+sim:/testbench/reset
+run 100
+run 1000
+# Compile of seven_segment_display.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.seven_segment_display(fast)
+run 1000
+# Error on vector         16, 0000000 (xxxxxxx expected)
+# Error on vector         17, 0000000 (xxxxxxx expected)
+# Error on vector         18, 0000000 (xxxxxxx expected)
+# Error on vector         19, 0000000 (xxxxxxx expected)
+# Error on vector         20, 0000000 (xxxxxxx expected)
+# Error on vector         21, 0000000 (xxxxxxx expected)
+# Error on vector         22, 0000000 (xxxxxxx expected)
+# Error on vector         23, 0000000 (xxxxxxx expected)
+# Error on vector         24, 0000000 (xxxxxxx expected)
+# Error on vector         25, 0000000 (xxxxxxx expected)
+# Error on vector         26, 0000000 (xxxxxxx expected)
+# Error on vector         27, 0000000 (xxxxxxx expected)
+# Error on vector         28, 0000000 (xxxxxxx expected)
+# Error on vector         29, 0000000 (xxxxxxx expected)
+# Error on vector         30, 0000000 (xxxxxxx expected)
+# Error on vector         31, 0000000 (xxxxxxx expected)
+# Error on vector         32, 0000000 (xxxxxxx expected)
+# Error on vector         33, 0000000 (xxxxxxx expected)
+# Error on vector         34, 0000000 (xxxxxxx expected)
+# Error on vector         35, 0000000 (xxxxxxx expected)
+# Error on vector         36, 0000000 (xxxxxxx expected)
+# Error on vector         37, 0000000 (xxxxxxx expected)
+# Error on vector         38, 0000000 (xxxxxxx expected)
+# Error on vector         39, 0000000 (xxxxxxx expected)
+# Error on vector         40, 0000000 (xxxxxxx expected)
+# Error on vector         41, 0000000 (xxxxxxx expected)
+# Error on vector         42, 0000000 (xxxxxxx expected)
+# Error on vector         43, 0000000 (xxxxxxx expected)
+# Error on vector         44, 0000000 (xxxxxxx expected)
+# Error on vector         45, 0000000 (xxxxxxx expected)
+# Error on vector         46, 0000000 (xxxxxxx expected)
+# Error on vector         47, 0000000 (xxxxxxx expected)
+# Error on vector         48, 0000000 (xxxxxxx expected)
+# Error on vector         49, 0000000 (xxxxxxx expected)
+# Error on vector         50, 0000000 (xxxxxxx expected)
+# Error on vector         51, 0000000 (xxxxxxx expected)
+# Error on vector         52, 0000000 (xxxxxxx expected)
+# Error on vector         53, 0000000 (xxxxxxx expected)
+# Error on vector         54, 0000000 (xxxxxxx expected)
+# Error on vector         55, 0000000 (xxxxxxx expected)
+# Error on vector         56, 0000000 (xxxxxxx expected)
+# Error on vector         57, 0000000 (xxxxxxx expected)
+# Error on vector         58, 0000000 (xxxxxxx expected)
+# Error on vector         59, 0000000 (xxxxxxx expected)
+# Error on vector         60, 0000000 (xxxxxxx expected)
+# Error on vector         61, 0000000 (xxxxxxx expected)
+# Error on vector         62, 0000000 (xxxxxxx expected)
+# Error on vector         63, 0000000 (xxxxxxx expected)
+# Error on vector         64, 0000000 (xxxxxxx expected)
+# Error on vector         65, 0000000 (xxxxxxx expected)
+# Error on vector         66, 0000000 (xxxxxxx expected)
+# Error on vector         67, 0000000 (xxxxxxx expected)
+# Error on vector         68, 0000000 (xxxxxxx expected)
+# Error on vector         69, 0000000 (xxxxxxx expected)
+# Error on vector         70, 0000000 (xxxxxxx expected)
+# Error on vector         71, 0000000 (xxxxxxx expected)
+# Error on vector         72, 0000000 (xxxxxxx expected)
+# Error on vector         73, 0000000 (xxxxxxx expected)
+# Error on vector         74, 0000000 (xxxxxxx expected)
+# Error on vector         75, 0000000 (xxxxxxx expected)
+# Error on vector         76, 0000000 (xxxxxxx expected)
+# Error on vector         77, 0000000 (xxxxxxx expected)
+# Error on vector         78, 0000000 (xxxxxxx expected)
+# Error on vector         79, 0000000 (xxxxxxx expected)
+# Error on vector         80, 0000000 (xxxxxxx expected)
+# Error on vector         81, 0000000 (xxxxxxx expected)
+# Error on vector         82, 0000000 (xxxxxxx expected)
+# Error on vector         83, 0000000 (xxxxxxx expected)
+# Error on vector         84, 0000000 (xxxxxxx expected)
+# Error on vector         85, 0000000 (xxxxxxx expected)
+# Error on vector         86, 0000000 (xxxxxxx expected)
+# Error on vector         87, 0000000 (xxxxxxx expected)
+# Error on vector         88, 0000000 (xxxxxxx expected)
+# Error on vector         89, 0000000 (xxxxxxx expected)
+# Error on vector         90, 0000000 (xxxxxxx expected)
+# Error on vector         91, 0000000 (xxxxxxx expected)
+# Error on vector         92, 0000000 (xxxxxxx expected)
+# Error on vector         93, 0000000 (xxxxxxx expected)
+# Error on vector         94, 0000000 (xxxxxxx expected)
+# Error on vector         95, 0000000 (xxxxxxx expected)
+# Error on vector         96, 0000000 (xxxxxxx expected)
+# Error on vector         97, 0000000 (xxxxxxx expected)
+# Error on vector         98, 0000000 (xxxxxxx expected)
+# Compile of seven_segment_display.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run 1000
+# Error on vector         99, 0000000 (xxxxxxx expected)
+# Error on vector        100, 0000000 (xxxxxxx expected)
+# Error on vector        101, 0000000 (xxxxxxx expected)
+# Error on vector        102, 0000000 (xxxxxxx expected)
+# Error on vector        103, 0000000 (xxxxxxx expected)
+# Error on vector        104, 0000000 (xxxxxxx expected)
+# Error on vector        105, 0000000 (xxxxxxx expected)
+# Error on vector        106, 0000000 (xxxxxxx expected)
+# Error on vector        107, 0000000 (xxxxxxx expected)
+# Error on vector        108, 0000000 (xxxxxxx expected)
+# Error on vector        109, 0000000 (xxxxxxx expected)
+# Error on vector        110, 0000000 (xxxxxxx expected)
+# Error on vector        111, 0000000 (xxxxxxx expected)
+# Error on vector        112, 0000000 (xxxxxxx expected)
+# Error on vector        113, 0000000 (xxxxxxx expected)
+# Error on vector        114, 0000000 (xxxxxxx expected)
+# Error on vector        115, 0000000 (xxxxxxx expected)
+# Error on vector        116, 0000000 (xxxxxxx expected)
+# Error on vector        117, 0000000 (xxxxxxx expected)
+# Error on vector        118, 0000000 (xxxxxxx expected)
+# Error on vector        119, 0000000 (xxxxxxx expected)
+# Error on vector        120, 0000000 (xxxxxxx expected)
+# Error on vector        121, 0000000 (xxxxxxx expected)
+# Error on vector        122, 0000000 (xxxxxxx expected)
+# Error on vector        123, 0000000 (xxxxxxx expected)
+# Error on vector        124, 0000000 (xxxxxxx expected)
+# Error on vector        125, 0000000 (xxxxxxx expected)
+# Error on vector        126, 0000000 (xxxxxxx expected)
+# Error on vector        127, 0000000 (xxxxxxx expected)
+# Error on vector        128, 0000000 (xxxxxxx expected)
+# Error on vector        129, 0000000 (xxxxxxx expected)
+# Error on vector        130, 0000000 (xxxxxxx expected)
+# Error on vector        131, 0000000 (xxxxxxx expected)
+# Error on vector        132, 0000000 (xxxxxxx expected)
+# Error on vector        133, 0000000 (xxxxxxx expected)
+# Error on vector        134, 0000000 (xxxxxxx expected)
+# Error on vector        135, 0000000 (xxxxxxx expected)
+# Error on vector        136, 0000000 (xxxxxxx expected)
+# Error on vector        137, 0000000 (xxxxxxx expected)
+# Error on vector        138, 0000000 (xxxxxxx expected)
+# Error on vector        139, 0000000 (xxxxxxx expected)
+# Error on vector        140, 0000000 (xxxxxxx expected)
+# Error on vector        141, 0000000 (xxxxxxx expected)
+# Error on vector        142, 0000000 (xxxxxxx expected)
+# Error on vector        143, 0000000 (xxxxxxx expected)
+# Error on vector        144, 0000000 (xxxxxxx expected)
+# Error on vector        145, 0000000 (xxxxxxx expected)
+# Error on vector        146, 0000000 (xxxxxxx expected)
+# Error on vector        147, 0000000 (xxxxxxx expected)
+# Error on vector        148, 0000000 (xxxxxxx expected)
+# Error on vector        149, 0000000 (xxxxxxx expected)
+# Error on vector        150, 0000000 (xxxxxxx expected)
+# Error on vector        151, 0000000 (xxxxxxx expected)
+# Error on vector        152, 0000000 (xxxxxxx expected)
+# Error on vector        153, 0000000 (xxxxxxx expected)
+# Error on vector        154, 0000000 (xxxxxxx expected)
+# Error on vector        155, 0000000 (xxxxxxx expected)
+# Error on vector        156, 0000000 (xxxxxxx expected)
+# Error on vector        157, 0000000 (xxxxxxx expected)
+# Error on vector        158, 0000000 (xxxxxxx expected)
+# Error on vector        159, 0000000 (xxxxxxx expected)
+# Error on vector        160, 0000000 (xxxxxxx expected)
+# Error on vector        161, 0000000 (xxxxxxx expected)
+# Error on vector        162, 0000000 (xxxxxxx expected)
+# Error on vector        163, 0000000 (xxxxxxx expected)
+# Error on vector        164, 0000000 (xxxxxxx expected)
+# Error on vector        165, 0000000 (xxxxxxx expected)
+# Error on vector        166, 0000000 (xxxxxxx expected)
+# Error on vector        167, 0000000 (xxxxxxx expected)
+# Error on vector        168, 0000000 (xxxxxxx expected)
+# Error on vector        169, 0000000 (xxxxxxx expected)
+# Error on vector        170, 0000000 (xxxxxxx expected)
+# Error on vector        171, 0000000 (xxxxxxx expected)
+# Error on vector        172, 0000000 (xxxxxxx expected)
+# Error on vector        173, 0000000 (xxxxxxx expected)
+# Error on vector        174, 0000000 (xxxxxxx expected)
+# Error on vector        175, 0000000 (xxxxxxx expected)
+# Error on vector        176, 0000000 (xxxxxxx expected)
+# Error on vector        177, 0000000 (xxxxxxx expected)
+# Error on vector        178, 0000000 (xxxxxxx expected)
+# Error on vector        179, 0000000 (xxxxxxx expected)
+# Error on vector        180, 0000000 (xxxxxxx expected)
+# Error on vector        181, 0000000 (xxxxxxx expected)
+# Error on vector        182, 0000000 (xxxxxxx expected)
+# Error on vector        183, 0000000 (xxxxxxx expected)
+# Error on vector        184, 0000000 (xxxxxxx expected)
+# Error on vector        185, 0000000 (xxxxxxx expected)
+# Error on vector        186, 0000000 (xxxxxxx expected)
+# Error on vector        187, 0000000 (xxxxxxx expected)
+# Error on vector        188, 0000000 (xxxxxxx expected)
+# Error on vector        189, 0000000 (xxxxxxx expected)
+# Error on vector        190, 0000000 (xxxxxxx expected)
+# Error on vector        191, 0000000 (xxxxxxx expected)
+# Error on vector        192, 0000000 (xxxxxxx expected)
+# Error on vector        193, 0000000 (xxxxxxx expected)
+# Error on vector        194, 0000000 (xxxxxxx expected)
+# Error on vector        195, 0000000 (xxxxxxx expected)
+# Error on vector        196, 0000000 (xxxxxxx expected)
+# Error on vector        197, 0000000 (xxxxxxx expected)
+# Error on vector        198, 0000000 (xxxxxxx expected)
+# Compile of seven_segment_display.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.seven_segment_display(fast)
+run 1000
+# Total test cases         16
+# Total errors          0
+# ** Note: $stop    : C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv(45)
+#    Time: 175 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/jacassidy/my_designs/E155_Lab1/fpga/radiant_project/lab1/source/impl_1/testbench.sv line 45
