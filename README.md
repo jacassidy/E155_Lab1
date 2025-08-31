@@ -1,0 +1,2 @@
+This lab is focused on creating a preliminary implementation of a seven segment display along with a testing framework to create a seven segment display module and confirm
+it functions as desired before moving onto bigger projects
