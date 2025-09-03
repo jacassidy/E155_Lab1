@@ -1,5 +1,8 @@
 // James Kaden Cassidy kacassidy@hmc.edu 8/31/2025
 
+// this module takes in an oscillating signal and decreases the frequency at which it oscillates by 20000000
+// this module could be improved by parameterizing this value
+
 module divider (
     input   logic   osc,
     input   logic   reset,
