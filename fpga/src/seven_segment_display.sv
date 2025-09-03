@@ -1,3 +1,7 @@
+// James Kaden Cassidy kacassidy@hmc.edu 8/31/2025
+
+// Seven segment display takes an input value to be displayed in hex (4 bits) and outputs the necessary segments to be lit (logic 0) and turned off (logic 1)
+
 module seven_segment_display(
         input   logic[3:0]  value,
         output  logic[6:0]  segments

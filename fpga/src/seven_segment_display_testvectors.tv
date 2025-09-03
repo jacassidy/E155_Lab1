@@ -1,3 +1,5 @@
+// James Kaden Cassidy kacassidy@hmc.edu 8/31/2025
+
 // hexidecimal value followed by expected display segments
 0000_0000001 // 0
 0001_1001111 // 1

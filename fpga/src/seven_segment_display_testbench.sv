@@ -1,3 +1,7 @@
+// James Kaden Cassidy kacassidy@hmc.edu 8/31/2025
+
+// testbench to confirm all permutations of seven segment display are correct
+
 module testbench();
 
     logic clk, reset;
@@ -20,7 +24,7 @@ module testbench();
 	// at start of test, load vectors and pulse reset
 	initial begin
 		
-		$readmemb("../radiant_project/lab1/source/impl_1/testvectors.tv", testvectors);
+		$readmemb("../src/seven_segment_display_testvectors.tv", testvectors);
 		
 		//Reset Values
 		vector_num = 0; errors = 0; reset = 1; 
